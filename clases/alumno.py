@@ -1,4 +1,4 @@
-class Alumno(object)
+class Alumno(object):
     nombre = ""
     apellido = ""
     fecha_Nac = ""
@@ -36,6 +36,6 @@ class Alumno(object)
         total = 0
         cantidad = 0
         for ahora in self.lista_Notas:
-            cantidad = cantidad + ahora
-            total = total+1
+            total = total + ahora
+            cantidad = cantidad+1
         return (total/cantidad)
