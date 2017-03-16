@@ -10,4 +10,3 @@ class Mascota(object):
 
     def quienSoy(self):
         return "soy " + self.nombre + " un " + self.tipo
-    """a
