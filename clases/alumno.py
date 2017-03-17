@@ -29,7 +29,7 @@ class Alumno(object):
         mayor = ahora
         for ahora in self.lista_Notas:
             if ahora > mayor:
-                menor = ahora
+                mayor = ahora
         return mayor
 
     def promedioNota(self):
