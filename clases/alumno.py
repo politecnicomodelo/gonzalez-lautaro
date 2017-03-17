@@ -21,13 +21,13 @@ class Alumno(object):
         self.fecha_Nac = str(fn)
 
     def menorNota(self):
-        total = 0
         for item in self.misMaterias:
-            total = total + sum(self.misMaterias[item].lista_Notas)
-        return total / len(self.misMaterias)
+            self.lista_Notas.append(sum(self.misMaterias[item].lista_Notas)/len(self.misMaterias[item].lista_Notas))
         return min(self.lista_Notas)
 
     def mayorNota(self):
+        for item in self.misMaterias:
+            self.lista_Notas.append(sum(self.misMaterias[item].lista_Notas)/len(self.misMaterias[item].lista_Notas))
         return max(self.lista_Notas)
 
     def promedioNotaMateria(self,Nmateria):
