@@ -1,7 +1,9 @@
+from datetime import date
+
 class Alumno(object):
     nombre = ""
     apellido = ""
-    fecha_Nac = ""
+    fecha_Nac = date
     lista_Notas = []
 
     def setNombre(self,n):
@@ -17,25 +19,10 @@ class Alumno(object):
         self.lista_Notas.append(nota)
 
     def menorNota(self):
-        ahora = self.lista_Notas[0]
-        menor = ahora
-        for ahora in self.lista_Notas:
-            if ahora < menor:
-                menor = ahora
-        return menor
+        return min(self.lista_Notas)
 
     def mayorNota(self):
-        ahora = self.lista_Notas[0]
-        mayor = ahora
-        for ahora in self.lista_Notas:
-            if ahora > mayor:
-                mayor = ahora
-        return mayor
+        return max(self.lista_Notas)
 
     def promedioNota(self):
-        total = 0
-        cantidad = 0
-        for ahora in self.lista_Notas:
-            total = total + ahora
-            cantidad = cantidad+1
-        return (total/cantidad)
+        return sum(self.lista_Notas)/len(self.lista_Notas)

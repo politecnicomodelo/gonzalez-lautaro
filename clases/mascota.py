@@ -9,4 +9,4 @@ class Mascota(object):
         self.tipo = t
 
     def quienSoy(self):
-        return "soy " + self.nombre + " un " + self.tipo
+        return "soy " + self.nombre + " un" + self.tipo
