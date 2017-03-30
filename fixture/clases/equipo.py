@@ -1,8 +1,8 @@
 class equipo(object):
     nombre = ""
-    disponibilidad[] = [0]
+    disponibilidad = []
     capitan = ""
-    listaJugadores[] = [0]
+    listaJugadores = []
     barrio = ""
 
     def agregarJugador(self,j):
