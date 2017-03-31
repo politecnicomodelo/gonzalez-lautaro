@@ -8,4 +8,4 @@ class equipo(object):
     def agregarJugador(self,j):
         self.listaJugadore.append(j)
 
-    def modDisponibilidad(self,):
+    def modDisponibilidad(self,ç):
