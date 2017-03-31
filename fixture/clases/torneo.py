@@ -3,6 +3,7 @@ class torneo(object):
     listaPartidos = []
 
     def agregarEquipo(self, e):
+        self.listaEquipos.append(e)
 
 
     def agregarFixture(self):
